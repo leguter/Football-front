@@ -1,0 +1,29 @@
+body {
+  background: #0a0a0a;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.page {
+  padding: 20px;
+}
+
+.btn,
+button {
+  background: linear-gradient(45deg, #ffcc00, #ffaa00);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
