@@ -1,0 +1,9 @@
+.nav{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  padding:10px 0;
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+}
+.link{ color:#9fb8ff; text-decoration:none; padding:8px 12px; border-radius:10px; font-weight:600; }
+.active{ background: linear-gradient(90deg,#00d4ff22,#ffd80011); color:#fff; box-shadow:0 6px 18px rgba(0,208,255,0.06); }

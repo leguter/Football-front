@@ -1,0 +1,6 @@
+.page{ min-height:100vh; background:linear-gradient(135deg,#021022,#071a2f); color:#fff; font-family:'Orbitron',sans-serif; }
+.container{ padding:14px; display:flex; flex-direction:column; gap:12px; align-items:center; }
+.topRow{ width:100%; max-width:420px; display:flex; justify-content:space-between; align-items:center; padding:6px 0; }
+.withdrawBtn{ background:linear-gradient(90deg,#ffd800,#ff7a00); padding:8px 12px; border-radius:10px; border:none; font-weight:800; color:#0a0a10; }
+.title{ margin-top:6px; font-size:1.1rem; color:#cfeaff; text-shadow:0 0 8px rgba(0,212,255,0.06); }
+.info{ max-width:420px; font-size:0.9rem; opacity:0.85; text-align:center; }

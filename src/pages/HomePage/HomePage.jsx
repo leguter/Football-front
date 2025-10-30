@@ -1,22 +1,19 @@
+// pages/Home.jsx
+import Navbar from "../../components/Navbar/Navbar";
+import Header from "../../components/Header/Header";
+import styles from "./HomePage.module.css";
 import { Link } from "react-router-dom";
-import { useTelegram } from "../hooks/useTelegram";
 
-export default function Home() {
-  const { user } = useTelegram();
-
+export default function HomePage() {
   return (
-    <div className="page">
-      <h1>⚽ Football Stars</h1>
-      {user ? (
-        <>
-          <p>Вітаємо, {user.first_name}!</p>
-          <Link className="btn" to="/game">
-            Почати гру
-          </Link>
-        </>
-      ) : (
-        <p>Завантаження Telegram даних...</p>
-      )}
+    <div className={styles.page}>
+      <Header />
+      <Navbar />
+      <main className={styles.main}>
+        <h1>Ласкаво просимо у Football Stars</h1>
+        <p>Вгадай кампанію удару — ставкою служать зірки. Забив — ставка множиться!</p>
+        <Link to="/game" className={styles.cta}>Почати гру ⚽</Link>
+      </main>
     </div>
   );
 }

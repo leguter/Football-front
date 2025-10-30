@@ -1,0 +1,13 @@
+.popup{
+  position:fixed;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:40%;
+  background: linear-gradient(90deg,#1b1f3a,#0a2b3a);
+  padding:10px 16px;
+  color:#ffd700;
+  border-radius:12px;
+  font-weight:800;
+  box-shadow:0 12px 30px rgba(0,0,0,0.6);
+  z-index:2000;
+}

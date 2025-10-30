@@ -1,29 +1,53 @@
-body {
-  background: #0a0a0a;
-  color: white;
-  font-family: sans-serif;
-  text-align: center;
+:root{
+  --bg:#0b0b0b;
+  --card:#111214;
+  --muted:#9aa0a6;
+  --neon:#00ff88;
+  --gold:#ffd066;
+  --glass: rgba(255,255,255,0.03);
+  --accent-gradient: linear-gradient(90deg, #00ff88 0%, #b7ff7f 40%, #ffd066 100%);
+  --orbitron: 'Orbitron', sans-serif;
 }
 
-.page {
-  padding: 20px;
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family: var(--orbitron);
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(0,255,136,0.03), transparent),
+              linear-gradient(180deg, #060606 0%, #0b0b0b 100%);
+  color: #e6f9ef;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding-bottom:60px;
 }
 
-.btn,
-button {
-  background: linear-gradient(45deg, #ffcc00, #ffaa00);
-  border: none;
-  padding: 10px 20px;
-  border-radius: 12px;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 10px;
+/* basic container */
+.container { max-width:1100px; margin:28px auto; padding:16px; }
+
+/* buttons */
+.btn {
+  display:inline-flex;align-items:center;gap:10px;
+  background: var(--accent-gradient);
+  color:#07110b;padding:10px 18px;border-radius:14px;border:none;
+  font-weight:700;cursor:pointer; box-shadow:0 6px 22px rgba(0,255,136,0.08);
+  transition:transform .14s ease, box-shadow .14s ease;
+}
+.btn:active{ transform:translateY(2px); box-shadow:0 3px 12px rgba(0,0,0,0.4); }
+.small { padding:6px 10px; border-radius:10px; font-size:14px; }
+
+/* common card */
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.04);
+  padding:14px; border-radius:14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
 }
 
-input {
-  margin-top: 10px;
-  padding: 8px;
-  border-radius: 8px;
-  border: none;
-}
+/* small helpers */
+.row { display:flex; gap:12px; align-items:center; }
+.col { display:flex; flex-direction:column; gap:8px; }
+.center { display:flex; align-items:center; justify-content:center; }
+
+/* nav spacing */
+.header-space { height:74px; }

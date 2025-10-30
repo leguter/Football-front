@@ -1,0 +1,5 @@
+.wrap{ position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.45); z-index:10000; }
+.modal{ background:#08182a; padding:18px; border-radius:12px; color:#fff; width:90%; max-width:360px; }
+.actions{ display:flex; gap:8px; justify-content:flex-end; margin-top:12px; }
+.cancel{ background:transparent; border:1px solid #fff2; padding:8px 10px; border-radius:8px; color:#fff; }
+.confirm{ background:linear-gradient(90deg,#ffd800,#ff7a00); border:none; padding:8px 10px; border-radius:8px; font-weight:800; }
