@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import api from "../../api";
+import * as api from "../../api";
 import { motion } from "framer-motion";
 
 export default function GamePage() {

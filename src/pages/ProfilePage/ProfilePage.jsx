@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Header from "../../components/Header/Header";
 import Navbar from "../../components/Navbar/Navbar";
 import StarBalance from "../../components/StarBalance/StarBalance";
-import api from "../../api";
+import { getBalance } from "../../api";
 import styles from "./ProfilePage.module.css";
 
 export default function ProfilePage() {
@@ -11,7 +11,7 @@ export default function ProfilePage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(()=>{
-    api.getBalance().then(res=>{
+    getBalance().then(res=>{
       setStars(res.data?.balance ?? 0);
     }).catch(()=> setStars(120)).finally(()=> setLoading(false));
   },[]);

@@ -16,6 +16,7 @@ export const authTelegram = (initData) => {
 };
 
 export const getStatus = () => api.get("/api/status");
+export const getBalance = () => api.get("/api/balance");
 export const placeBet = (data) => api.post("/api/bets/place", data);
 export const cashout = (data) => api.post("/api/bets/cashout", data);
 export const startRound = () => api.post("/api/start");
