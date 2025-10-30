@@ -22,6 +22,7 @@ export default function GamePage() {
     });
   }, []);
 
+  
   // Підвантаження стану гри
   useEffect(() => {
     const interval = setInterval(() => {
