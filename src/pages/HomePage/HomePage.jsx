@@ -10,9 +10,9 @@ export default function HomePage() {
       <Header />
       <Navbar />
       <main className={styles.main}>
-        <h1>Ласкаво просимо у Football Stars</h1>
-        <p>Вгадай кампанію удару — ставкою служать зірки. Забив — ставка множиться!</p>
-        <Link to="/game" className={styles.cta}>Почати гру ⚽</Link>
+        <h1>Добро пожаловать в Football Stars</h1>
+        <p>Угадай кампанию удара – ставкой служат звезды. Убил – ставка умножается!</p>
+        <Link to="/game" className={styles.cta}>Начать игру ⚽</Link>
       </main>
     </div>
   );

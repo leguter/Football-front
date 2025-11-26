@@ -6,7 +6,7 @@ export default function StarBalance({ stars, loading }) {
     <div className={styles.wrap}>
       <div className={styles.icon}>🌟</div>
       <div className={styles.value}>
-        {loading ? "..." : `${stars} Зірок`}
+        {loading ? "..." : `${stars} Звезд`}
       </div>
     </div>
   );

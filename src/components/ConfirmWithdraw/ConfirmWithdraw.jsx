@@ -8,8 +8,8 @@ export default function ConfirmWithdraw({ onConfirm, onCancel, amount }) {
       <div className={styles.modal}>
         <h3>Вивести {amount} 🌟?</h3>
         <div className={styles.actions}>
-          <button onClick={onCancel} className={styles.cancel}>Скасувати</button>
-          <button onClick={onConfirm} className={styles.confirm}>Підтвердити</button>
+          <button onClick={onCancel} className={styles.cancel}>Отменить</button>
+          <button onClick={onConfirm} className={styles.confirm}>Потвердить</button>
         </div>
       </div>
     </motion.div>

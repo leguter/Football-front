@@ -34,7 +34,7 @@ export default function BetGrid({ directions, selected, onSelectDirection, onPla
           placeholder="Ставка (зірки)"
         />
         <button className={styles.place} onClick={onPlaceBet}>
-          Поставити
+          Поставить
         </button>
       </div>
     </div>

@@ -66,7 +66,7 @@ export default function GamePage() {
     <div className="game-page p-4 text-white bg-gradient-to-b from-blue-900 to-black min-h-screen">
       <h1 className="text-3xl font-bold mb-4">⚽ Football Stars</h1>
       <p>Баланс: ⭐ {balance}</p>
-      <p>Поточний раунд: {currentRound?.roundId || "немає активного"}</p>
+      <p>Текущий раунд: {currentRound?.roundId || "немає активного"}</p>
 
       <div className="mt-4 flex gap-2">
         <input
@@ -83,7 +83,7 @@ export default function GamePage() {
         </button>
       </div>
 
-      <h2 className="text-xl mt-6">Активні ставки</h2>
+      <h2 className="text-xl mt-6">Активные ставки</h2>
       <ul>
         {activeBets.map(bet => (
           <li key={bet.id} className="flex justify-between mt-2">
